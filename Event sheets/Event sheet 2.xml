@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 2</name>
+    <events>
+        <variable constant="0" name="Lives2" sid="722295241302527" static="0" type="number">3</variable>
+        <variable constant="0" name="Score2" sid="214715199684812" static="0" type="number">0</variable>
+        <event-block sid="437260039761862">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="442349955950387" type="System" />
+            </conditions>
+            <actions>
+                <action disabled="1" id="-22" name="Set angle toward position" sid="236550220696418" type="Psawat">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+                <action id="-8" name="Set angle" sid="996002731134321" type="Psawat">
+                    <param id="0" name="Angle">angle(Psawat.X,Psawat.Y,Mouse.X,Mouse.Y)+90</param>
+                </action>
+                <action id="0" name="Set text" sid="186640630257807" type="Point">
+                    <param id="0" name="Text">&quot;Point:&quot;&amp;Score2</param>
+                </action>
+                <action id="0" name="Set text" sid="913073156502715" type="Lives">
+                    <param id="0" name="Text">&quot;Lives:&quot;&amp;Lives2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="434838811824266">
+            <conditions>
+                <condition id="2" name="Key is down" sid="446895723915117" type="Keyboard">
+                    <param id="0" name="Key">65</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="643745556898422" type="Psawat">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="365535208902214">
+            <conditions>
+                <condition id="2" name="Key is down" sid="678281656745179" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="495077011090331" type="Psawat">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="292207222240050">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="289441276142849" type="Pluru" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="737657190887886" type="Pluru" />
+            </actions>
+        </event-block>
+        <event-block sid="569218447429332">
+            <conditions>
+                <condition id="0" name="On click" sid="612584340344960" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="972546727223281" type="Psawat">
+                    <param id="0" name="Object">Pluru</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-8" name="Set angle" sid="871688480488450" type="Pluru">
+                    <param id="0" name="Angle">angle(Psawat.X,Psawat.Y,Mouse.X,Mouse.Y)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="887782843372325">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="449089649048011" type="System" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="124676227781592" type="Momon">
+                    <param id="0" name="X">Psawat.X</param>
+                    <param id="1" name="Y">Psawat.Y</param>
+                </action>
+                <action id="-17" name="Move forward" sid="187580753938374" type="Momon">
+                    <param id="0" name="Distance">4</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="882196353040613" type="PluruMomon">
+                    <param id="0" name="X">Psawat.X</param>
+                    <param id="1" name="Y">Psawat.Y</param>
+                </action>
+                <action id="-17" name="Move forward" sid="685179184456502" type="PluruMomon">
+                    <param id="0" name="Distance">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="318439839661485">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="291819693508846" type="Momon">
+                    <param id="0" name="Object">Pluru</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="391209539027401" type="Momon" />
+                <action id="-9" name="Destroy" sid="650008942677196" type="Pluru" />
+                <action id="-10" name="Add to" sid="771167620763155" type="System">
+                    <param id="0" name="Variable">Score2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="246341543074767">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="859266608273488" type="Psawat">
+                    <param id="0" name="Object">Momon</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="525596009149229" type="Psawat" />
+                <action id="-11" name="Subtract from" sid="634375087603985" type="System">
+                    <param id="0" name="Variable">Lives2</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-25" name="Go to layout (by name)" sid="774891901203706" type="System">
+                    <param id="0" name="Layout">&quot;You Lose&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="574034928831213">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="372974192730317" type="System">
+                    <param id="0" name="Interval (seconds)">2.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="208826760608513" type="MonSpawn">
+                    <param id="0" name="Object">Momon</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="206810457883063">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="817146305440249" type="System">
+                    <param id="0" name="Interval (seconds)">2.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="436201335596270" type="Momon">
+                    <param id="0" name="Object">PluruMomon</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="502380465928407">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="246431105270918" type="PluruMomon" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="575336307264506" type="PluruMomon" />
+            </actions>
+        </event-block>
+        <event-block sid="290532663898871">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="172236726786932" type="PluruMomon">
+                    <param id="0" name="Object">Psawat</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="455158117291420" type="System">
+                    <param id="0" name="Variable">Lives2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="504253943490128" type="PluruMomon" />
+            </actions>
+        </event-block>
+        <event-block sid="761155345431600">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="261790582281762" type="PluruMomon">
+                    <param id="0" name="Object">Shield</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="172118035478933" type="PluruMomon" />
+            </actions>
+        </event-block>
+        <event-block sid="948864846946129">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="761912523217094" type="System">
+                    <param id="0" name="Variable">Score2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">20</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="387801077506238" type="System">
+                    <param id="0" name="Layout">&quot;You Win&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="861354327593072">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="193922511889062" type="System">
+                    <param id="0" name="Variable">Lives2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="802783859790286" type="System">
+                    <param id="0" name="Layout">&quot;You Lose&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Shooter</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>335mo2a2dip1h</unique-id>
+    <saved-with-version>22700</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1708</width>
+        <height>960</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Psawat" sid="234823865849253">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="432254129632129">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="638246898150607">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="815145717211899" speed="5">
+                    <frame duration="1" hotspotX="0.503912" hotspotY="0.500879" original-source="D:\Download_an\%E2%80%94Pngtree%E2%80%94sword_1547700.png">
+                        <image-point name="Pluru" x="0.500782" y="0.0123023" />
+                        <collision-poly>
+                            <point x="0.338028" y="0.370826" />
+                            <point x="0.502347" y="0.0123023" />
+                            <point x="0.665102" y="0.372583" />
+                            <point x="0.755869" y="0.499121" />
+                            <point x="0.785603" y="0.760984" />
+                            <point x="0.502347" y="0.818981" />
+                            <point x="0.219092" y="0.760984" />
+                            <point x="0.244131" y="0.499121" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="293538115173030">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Mouse" sid="905798696831030">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Pluru" sid="328717842931859">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="671244253535310">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="361158505157181" speed="5">
+                    <frame duration="1" hotspotX="0.479741" hotspotY="0.522491" original-source="D:\Gambar\pluru.png">
+                        <collision-poly>
+                            <point x="0.0777958" y="0.217993" />
+                            <point x="0.479741" y="0.0138408" />
+                            <point x="0.938412" y="0.0968858" />
+                            <point x="0.952998" y="0.522491" />
+                            <point x="0.9141" y="0.896194" />
+                            <point x="0.479741" y="0.903114" />
+                            <point x="0.113452" y="0.750865" />
+                            <point x="0.0113452" y="0.522491" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Momon" sid="705516762560377">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="880578313538332" speed="5">
+                    <frame duration="1" hotspotX="0.502703" hotspotY="0.503671" original-source="D:\Download_an\PinClipart.com_motion-clipart_1236689.png">
+                        <image-point name="Imagepoint 1" x="0.581081" y="0.879589" />
+                        <collision-poly>
+                            <point x="0.0837838" y="0.0910426" />
+                            <point x="0.498649" y="0.0469897" />
+                            <point x="0.927027" y="0.0778267" />
+                            <point x="0.939189" y="0.499266" />
+                            <point x="0.864865" y="0.853157" />
+                            <point x="0.498649" y="0.986784" />
+                            <point x="0.151351" y="0.834068" />
+                            <point x="0.0675676" y="0.499266" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BG" sid="929782182956264">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Download_an\%E2%80%94Pngtree%E2%80%94space%20background_3591568.png" />
+        </object-type>
+        <object-type name="MonSpawn" sid="864504832963865">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="787664227092798" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Point" sid="383179121907409">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Lives" sid="890871257490126">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="PluruMomon" sid="234951338273475">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="361421557313412" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501901" original-source="D:\Gambar\laser-beam-png-images-vector-and-psd-files-free-download-on-laser-beam-png-260_261.png.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Shield" sid="419665409396602">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="219923599584580" speed="5">
+                    <frame duration="1" hotspotX="0.5025" hotspotY="0.496835" original-source="D:\Gambar\PWpF2FYfdEnXBgkQw2bYmmcxD.png">
+                        <collision-poly>
+                            <point x="0.065" y="0.0727848" />
+                            <point x="0.5025" y="0.00316456" />
+                            <point x="0.935" y="0.0759494" />
+                            <point x="0.965" y="0.496835" />
+                            <point x="0.755" y="0.803797" />
+                            <point x="0.5025" y="0.988924" />
+                            <point x="0.2475" y="0.80538" />
+                            <point x="0.0325" y="0.496835" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="365230467501449">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="371465979450966" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Gambar\65-651496_you-win-image-transparent.png">
+                        <collision-poly>
+                            <point x="0.00912779" y="0.0222772" />
+                            <point x="0.989858" y="0.0222772" />
+                            <point x="0.901623" y="0.497525" />
+                            <point x="0.947262" y="0.871287" />
+                            <point x="0.498986" y="0.868812" />
+                            <point x="0.146045" y="0.641089" />
+                            <point x="0.0973631" y="0.497525" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="616616368508747">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="730616750470283" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Gambar\you-lose-video-game-arcade-broken-monitor-motion-background-lose-a-game-png-1920_1080.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Level 1.xml</layout>
+        <layout>Level 2.xml</layout>
+        <layout>You Win.xml</layout>
+        <layout>You Lose.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="1" />
+        <global-instance type="Mouse" uid="2" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
